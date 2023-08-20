@@ -10,39 +10,38 @@
 </head>
 <body>
     <div class="container">
-      <h1>Preencha os Campos:</h1>
-      <form>
-        <div class="input-field">
-          <input required type="text" placeholder="Nome" name="name">
-        </div>
-        <div class="input-field">
-          <input required type="number" placeholder="Idade" name="year" id="year">
-        </div>
-        <div class="input-field">
-            <input required type="number" placeholder="Altura" name="altura" id="altura">
-        </div>
-        <div class="input-field">
-            <input required type="number" placeholder="Peso" name="peso" id="peso">
-        </div>
-        <div class="input-field">
-            <label>Sexo:</label>
-            <div class="radio-group">
-                <label>
-                    <input required type="radio" name="gender" value="masculino"> Masculino
-                </label>
-                <label>
-                    <input required type="radio" name="gender" value="feminino"> Feminino
-                </label>
+        <h1>Preencha os Campos:</h1>
+        <form id="imc-form">
+            <div class="input-field">
+                <input required type="text" placeholder="Nome" id="name" name="name">
             </div>
+            <div class="input-field">
+                <input required type="number" placeholder="Idade" id="year" name="year">
+            </div>
+            <div class="input-field">
+                <input required type="number" placeholder="Altura (m)" name="altura" step="0.01" id="altura">
+            </div>
+            <div class="input-field">
+                <input required type="number" placeholder="Peso (kg)" name="peso" step="0.01" id="peso">
+            </div>
+            <div class="input-field">
+                <label>Sexo:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="masculino"> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="feminino"> Feminino
+                    </label>
+                </div>
+            </div>
+            <div class="input-field">
+                <input type="submit" id="calc" value="Calcular"/>
+            </div>
+        </form>
+        <div id="resultado">
         </div>
-        <div class="input-field">
-          <input type="submit" name="Calcular" value="Calcular"/>
-        </div>
-      </form>
-    </div>
-    <div class="resltado">
-        
     </div>
     <script src="/js/script.js"></script>
-  </body>
+</body>
 </html>

@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="white" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora de IMC</title>
 </head>
 <body>
-    <h1>Teste IMC</h1>
-</body>
+    <div class="container">
+      <h1>Preencha os Campos:</h1>
+      <form>
+        <div class="input-field">
+          <input required type="text" placeholder="Nome" name="name">
+        </div>
+        <div class="input-field">
+          <input required type="number" placeholder="Idade" name="year" id="year">
+        </div>
+        <div class="input-field">
+            <input required type="number" placeholder="Altura" name="altura" id="altura">
+        </div>
+        <div class="input-field">
+            <input required type="number" placeholder="Peso" name="peso" id="peso">
+        </div>
+        <div class="input-field">
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label>
+                    <input required type="radio" name="gender" value="masculino"> Masculino
+                </label>
+                <label>
+                    <input required type="radio" name="gender" value="feminino"> Feminino
+                </label>
+            </div>
+        </div>
+        <div class="input-field">
+          <input type="submit" name="Calcular" value="Calcular"/>
+        </div>
+      </form>
+    </div>
+    <div class="resltado">
+        
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
